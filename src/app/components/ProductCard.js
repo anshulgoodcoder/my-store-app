@@ -3,7 +3,6 @@ import React from "react";
 import "../globals.css";
 
 export default function ProductCard({ product, onAddToCart, cart }) {
-  console.log(cart, ">>>");
   const existing = cart.find((p) => p.id === product.id);
 
   return (
