@@ -1,6 +1,25 @@
 "use client";
 import React from "react";
 
+
+const btnStyle = {
+  border: "1px solid #0070f3",
+  background: "white",
+  color: "#0070f3",
+  borderRadius: "4px",
+  padding: "4px 8px",
+  cursor: "pointer",
+};
+
+const removeBtnStyle = {
+  border: "none",
+  background: "none",
+  cursor: "pointer",
+  color: "red",
+  fontSize: "18px",
+};
+
+
 export default function CartItem({ item, onIncrease, onDecrease, onRemove }) {
   return (
     <div
@@ -37,20 +56,3 @@ export default function CartItem({ item, onIncrease, onDecrease, onRemove }) {
     </div>
   );
 }
-
-const btnStyle = {
-  border: "1px solid #0070f3",
-  background: "white",
-  color: "#0070f3",
-  borderRadius: "4px",
-  padding: "4px 8px",
-  cursor: "pointer",
-};
-
-const removeBtnStyle = {
-  border: "none",
-  background: "none",
-  cursor: "pointer",
-  color: "red",
-  fontSize: "18px",
-};

@@ -25,8 +25,17 @@ export default function ProductCard({ product, onAddToCart, cart }) {
           margin: "0 auto 10px",
         }}
       />
-      <div style={{ height: "130px", overflow: "hidden " }}>
-        <h3 style={{ fontSize: "16px", marginBottom: "8px" }}>
+      <div style={{ minHeight: "130px", height: "130px", overflow: "hidden" }}>
+        <h3
+          style={{
+            fontSize: "16px",
+            marginBottom: "8px",
+            display: "-webkit-box",
+            WebkitLineClamp: 4, // number of visible lines
+            WebkitBoxOrient: "vertical",
+            overflow: "hidden",
+          }}
+        >
           {product.title}
         </h3>
         <p style={{ fontWeight: "bold", color: "#333", marginBottom: "8px" }}>
