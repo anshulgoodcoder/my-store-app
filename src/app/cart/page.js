@@ -65,7 +65,7 @@ export default function CartPage() {
       </h1>
 
       <Link href="/" style={{ color: "#0070f3", fontWeight: "bold" ,cursor:'pointer'}}>
-        <button >Back</button>
+        <button style={{cursor:'pointer' , fontSize:'24px'}}>Back</button>
       </Link>
       {cart.length === 0 ? (
         <p style={{ textAlign: "center", color: "#666" }}>Your cart is empty</p>
